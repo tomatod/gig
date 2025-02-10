@@ -14,7 +14,7 @@ func GetCLI(ctx context.Context, action cli.ActionFunc) *cli.Command {
 	scopeFlag := &cli.StringFlag{
 		Name:    "scope",
 		Aliases: []string{"s"},
-		Usage:   "A scopes: file (.gitignore), local (.git/info/exclude) and global ($HOME/.config/git/ignore)",
+		Usage:   "Scope: file (.gitignore), local (.git/info/exclude) and global ($HOME/.config/git/ignore)",
 		Value:   "file",
 		Validator: func(s string) error {
 			if !slices.Contains([]string{"file", "local", "global"}, s) {
@@ -27,7 +27,7 @@ func GetCLI(ctx context.Context, action cli.ActionFunc) *cli.Command {
 	modeFlag := &cli.StringFlag{
 		Name:    "mode",
 		Aliases: []string{"m"},
-		Usage:   "A mode: edit or list. In edit mode, you can edit 'gitignore file'. In list mode, All ignored files in the current repository are listed.",
+		Usage:   "Mode: edit or list. In edit mode, you can edit 'gitignore file'. In list mode, All ignored files in the current repository are listed.",
 		Value:   "edit",
 		Validator: func(m string) error {
 			if !slices.Contains([]string{"edit", "list"}, m) {
