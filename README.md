@@ -20,8 +20,8 @@ USAGE:
    gig [global options]
 
 GLOBAL OPTIONS:
-   --scope value, -s value     A scopes: file (.gitignore), local (.git/info/exclude) and global ($HOME/.config/git/ignore) (default: "file")
-   --mode value, -m value      A mode: edit or list. In edit mode, you can edit 'gitignore file'. In list mode, All ignored files in the current repository are listed. (default: "edit")
+   --scope value, -s value     Scope: file (.gitignore), local (.git/info/exclude) and global ($HOME/.config/git/ignore) (default: "file")
+   --mode value, -m value      Mode: edit or list. In edit mode, you can edit 'gitignore file'. In list mode, All ignored files in the current repository are listed. (default: "edit")
    --editor value, -e value    A text editor used in edit mode. You can include options of the editor. By default, 'core.editor of git' > '$EDITOR' > 'vi' will be selected in order. (default: "vi")
    --template value, -t value  A template path from https://github.com/github/gitignore as the origin of a new .gitignore. Please also see template section in README (https://github.com/tomatod/gig)
    --help, -h                  show help
