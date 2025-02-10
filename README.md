@@ -8,18 +8,7 @@ go install github.com/tomatod/gig@latest
 ```
 
 ### Execution file download
-Please access release page (that is in the right side bar), download binary files and rename it to gig if you need. File names are ```gig-<OS>-<CPU>```. Please refer to the next table. 
-
-| OS | CPU | file name |
-| --- | --- | --- |
-| Linux | x86_64 | gig-linux-x86_64 |
-| Linux | arm_64 | gig-linux-arm_64 | 
-| Mac | x86_64 | gig-darwin-x86_64 |
-| Mac | arm_64 | gig-darwin-arm_64 | 
-| Windows | x86_64 | gig-windows-x86_64.exe |
-| Windows | arm_64 | gig-windows-arm_64.exe | 
-
-note: I didn't check the operation in above all the environments. so if you get any bugs, please make GitHub issues.
+Please access release page (that is in the right side bar), download binary files and rename it to gig if you need.
 
 ## Usage
 You can show gig's help by ```gig -h```.
